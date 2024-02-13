@@ -1,0 +1,7 @@
+.books {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
