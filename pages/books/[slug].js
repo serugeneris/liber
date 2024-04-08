@@ -2,7 +2,6 @@ import BookContent from "@/components/books/book-detail/book-content";
 import { getAllBooks, getBookById } from "@/utils/get-books";
 
 function BookDetailPage(props) {
-  console.log(props.book);
   return <BookContent book={props.book}></BookContent>;
 }
 
