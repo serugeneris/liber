@@ -3,6 +3,12 @@ import classes from "./nav-bar.module.css";
 import Link from "next/link";
 
 function NavBar() {
+  const links = [
+    { href: "/books", title: "All Books" },
+    { href: "/contact", title: "Contact" },
+    { href: "/login", title: "Login" },
+  ];
+
   return (
     <header className={classes.header}>
       <Link href="/">
@@ -10,15 +16,11 @@ function NavBar() {
       </Link>
       <nav>
         <ul>
-          <li>
-            <Link href="/books">All Books</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link href="/login">Login</Link>
-          </li>
+          {links.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href}>{link.title}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

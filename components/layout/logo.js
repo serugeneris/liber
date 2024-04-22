@@ -5,7 +5,13 @@ function Logo() {
   return (
     <div className={classes.logo}>
       <div className={classes.image}>
-        <Image src="/liber-logo.webp" alt="logo" width={65} height={65}></Image>
+        <Image
+          src="/liber-logo.webp"
+          alt="logo"
+          width={65}
+          height={65}
+          className={classes.image}
+        ></Image>
       </div>
     </div>
   );
