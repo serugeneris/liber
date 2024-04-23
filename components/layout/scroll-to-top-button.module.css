@@ -1,0 +1,16 @@
+.button {
+  position: fixed;
+  right: 2rem;
+  bottom: 0;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.button svg {
+  height: 50px;
+  width: auto;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
