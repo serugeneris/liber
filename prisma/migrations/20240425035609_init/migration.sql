@@ -12,6 +12,7 @@ CREATE TABLE "Book" (
     "title" TEXT NOT NULL,
     "author" TEXT NOT NULL,
     "description" TEXT NOT NULL,
+    "publisher" TEXT NOT NULL,
     "publicationYear" INTEGER
 );
 
